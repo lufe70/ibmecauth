@@ -1,0 +1,134 @@
+/* src/styles/home.css */
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.home-container {
+  max-width: 1000px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.home-content {
+  padding: 50px;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-overview {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.feature-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 25px;
+  width: 250px;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid #ff9800; /* Usando laranja como cor de destaque */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.login-link-button {
+  display: inline-block;
+  background-color: #ff9800; /* Laranja como cor principal */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 152, 0, 0.2);
+}
+
+.login-link-button:hover {
+  background-color: #e65100; /* Laranja escuro para hover */
+  box-shadow: 0 6px 10px rgba(230, 81, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.home-footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.home-footer a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.home-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 30px;
+  }
+  
+  .home-content h1 {
+    font-size: 2rem;
+  }
+  
+  .features-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}

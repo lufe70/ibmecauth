@@ -1,0 +1,89 @@
+/* src/styles/login.css */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9800, #e65100); /* Laranja substituindo vermelho */
+}
+
+.login-container {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: 600;
+}
+
+.login-container p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #fff;
+  color: #5e5e5e;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.login-button:hover {
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ms-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+/* Botão de voltar para Home */
+.back-to-home {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.back-link:hover {
+  color: #ff9800;
+}
+
+.auth-callback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.auth-callback p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 16px;
+}
