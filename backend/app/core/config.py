@@ -30,7 +30,7 @@ class Settings(BaseSettings):
     MS_TENANT_ID: str = os.getenv("MS_TENANT_ID", "common")
     MS_CLIENT_ID: str = os.getenv("MS_CLIENT_ID", "")
     MS_CLIENT_SECRET: str = os.getenv("MS_CLIENT_SECRET", "")
-    MS_REDIRECT_URI: str = os.getenv("MS_REDIRECT_URI", "http://localhost:8000/api/v1/auth/callback")
+    MS_REDIRECT_URI: str = os.getenv("MS_REDIRECT_URI", "http://localhost:8000/auth/callback")
     MS_SCOPES: list = ["User.Read"]
     
     # Configuração de CORS
